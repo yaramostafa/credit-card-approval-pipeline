@@ -9,7 +9,7 @@ import os
 # Create your views here.
 
 # Load the trained pipeline
-pipeline_path = os.path.join(os.path.dirname(__file__), 'logistic_regression_pipeline.pkl')
+pipeline_path = os.path.join(os.path.dirname(__file__), 'logistic_regression_tuned_pipeline.pkl')
 pipeline = joblib.load(pipeline_path)
 
 class PredictApproval(APIView):
